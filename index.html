@@ -1,0 +1,85 @@
+ <!--
+  Built at RICR
+  For more information, visit: https://ricr.in/
+
+  Project Name: Drawing App JavaScript
+  Workshop Dates: 11-14 June 2024
+  Workshop Venue: RICR Bhopal
+-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Drawing App JavaScript | Built at RICR</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <section class="tools-board">
+        <div class="box">
+          <span class="box-title">Shapes</span>
+          <ul class="options">
+            <li class="option tool" id="rectangle">
+              <img src="icons/rectangle.svg" />
+              <span>Rectangle</span>
+            </li>
+            <li class="option tool" id="circle">
+              <img src="icons/circle.svg" />
+              <span>Circle</span>
+            </li>
+            <li class="option tool" id="triangle">
+              <img src="icons/triangle.svg" />
+              <span>Traingle</span>
+            </li>
+            <li class="option">
+              <input type="checkbox" id="fill-color" />
+              <label for="fill-color">Fill Color</label>
+            </li>
+          </ul>
+        </div>
+        <div class="box">
+          <span class="box-title">Options</span>
+          <ul class="options">
+            <li class="option tool active" id="brush">
+              <img src="icons/brush.svg" />
+              <span>Brush</span>
+            </li>
+            <li class="option tool" id="eraser">
+              <img src="icons/eraser.svg" />
+              <span>Eraser</span>
+            </li>
+          </ul>
+        </div>
+        <div class="box">
+          <span class="box-title">Brush Size</span>
+          <input type="range" min="1" max="50" value="10" id="brush-size" />
+        </div>
+
+        <div class="box colors">
+          <span class="box-title">Colors</span>
+          <ul class="options">
+            <li class="option color selected" id="black"></li>
+            <li class="option color" id="red"></li>
+            <li class="option color" id="blue"></li>
+            <li class="option color" id="green"></li>
+            <li class="option color" id="yellow"></li>
+          </ul>
+        </div>
+
+        <div class="box buttons">
+          <button id="clear">Clear</button>
+          <button id="save">Save Image</button>
+        </div>
+      </section>
+      <section class="drawing-board">
+        <canvas></canvas>
+      </section>
+    </div>
+    <span class="credits">
+      Made with &hearts; at RICR by  Rahul patle &hearts;
+    </span>
+  </body>
+</html>
